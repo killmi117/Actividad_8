@@ -1,0 +1,178 @@
+/* CONTENIDO RESPONSIVO */
+.imagen-responsiva {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Estilos para pantallas más pequeñas, como dispositivos móviles */
+}
+
+@media screen and (min-width: 769px) {
+  /* Estilos para pantallas más grandes, como tablets y escritorio */
+}
+
+.CONTAINER {
+
+  DISPLAY: FLEX;
+
+  FLEX-WRAP: WRAP;
+
+  JUSTIFY-CONTENT: SPACE-BETWEEN;
+
+}
+
+.ITEM {
+
+  FLEX-BASIS: 100%;
+
+  MARGIN-BOTTOM: 1EM;
+
+}
+
+@MEDIA (MIN-WIDTH: 768PX) {
+
+  .ITEM {
+
+    FLEX-BASIS: 48%;
+
+  }
+
+}
+
+/* CONTENIDO DE LA PAGINA WEB */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Imagenes\\cyberpunk-2077.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: #cf000078;
+  color: #fff200;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.album {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #00000081;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+h2 {
+  color: #ff0000
+}
+
+p {
+  color: #ffffff;
+}
+
+/* Estilo para la animación */
+a {
+  transition: color 0.3s;
+}
+
+/* Estilo para cambiar el color al hacer hover */
+a:hover {
+  color: #fff200;
+}
+
+/* Estilos para el carrusel */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Estilo para imágenes responsivas */
+.imagen-responsiva {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para la animación */
+.mySlides img {
+  transition: transform 0.3s;
+}
+
+/* Estilo para aplicar la transformación al hacer hover */
+.mySlides:hover img {
+  transform: scale(1.05);
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: #000000e6;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Estilos para cerrar el modal */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* MAPA de google */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}

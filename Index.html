@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMURAI - Banda de Música Cyberpunk 2077</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="description" content="Descubre el mundo distópico de Night City con SAMURAI, la banda icónica de *Cyberpunk 2077*. Conocidos por su música innovadora y su estilo único, SAMURAI ha cautivado a audiencias de todo el mundo con su mensaje provocador y su presencia escénica impactante. Explora la biografía de la banda, su música y una galería visual que te sumergirá en el universo cyberpunk de *Cyberpunk 2077*.">
+    <meta name="author" content="Cristian Arturo Ahumada Carranza">
+    <link rel="icon" href="Imagenes\ICONO.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img src="Imagenes/SAMURAI.png" alt="SAMURAI" style="max-width: 100%; height: auto;">
+        <nav>
+            <a href="#bio">Biografía</a>
+            <a href="#music">Música</a>
+            <a href="#gallery">Galería</a>
+            <a href="GPS.html">Ubicación</a>
+        </nav>
+    </header>
+    <main>
+        <section id="bio">
+            <h2>Biografía</h2>
+            <p>SAMURAI es una banda ficticia de música Cyberpunk 2077, conocida por su estilo único y su presencia
+                escénica impactante. Formada en Night City, SAMURAI ha cautivado a audiencias de todo el mundo con
+                su
+                música innovadora y su mensaje provocador.</p>
+        </section>
+        <section id="music">
+            <h2>Música</h2>
+            <p>Descubre la música de SAMURAI en todas las plataformas digitales. Sus canciones son un viaje auditivo
+                a
+                través del mundo distópico de Cyberpunk 2077, llenas de energía y emoción.</p>
+        </section>
+        <section id="gallery">
+            <h2>Galería</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade" style="text-align: center;">
+                    <img src="Imagenes/1.jpg" style="width:50%" class="imagen-responsiva"
+                        onclick="abrirModal('Imagenes/1.jpg')">
+                </div>
+                <div class="mySlides fade" style="text-align: center;">
+                    <img src="Imagenes/2.jpg" style="width:50%" class="imagen-responsiva"
+                        onclick="abrirModal('Imagenes/2.jpg')">
+                </div>
+                <div class="mySlides fade" style="text-align: center;">
+                    <img src="Imagenes/3.jpg" style="width:50%" class="imagen-responsiva"
+                        onclick="abrirModal('Imagenes/3.jpg')">
+                </div>
+                <div class="mySlides fade" style="text-align: center;">
+                    <img src="Imagenes/4.jpg" style="width:50%" class="imagen-responsiva"
+                        onclick="abrirModal('Imagenes/4.jpg')">
+                </div>
+                <div class="mySlides fade" style="text-align: center;">
+                    <img src="Imagenes/5.jpg" style="width:50%" class="imagen-responsiva"
+                        onclick="abrirModal('Imagenes/5.jpg')">
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <img class="modal-content" id="imagenModal">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre el creador</h2>
+                <p>¡Hola! Soy Cristian Arturo Ahumada Carranza, el creador de SAMURAI. Soy un apasionado de la música y
+                    la cultura cyberpunk.</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Redes Sociales</h2>
+                <i class="material-icons">facebook</i>
+                <i class="material-icons">discord</i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2077 SAMURAI. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
