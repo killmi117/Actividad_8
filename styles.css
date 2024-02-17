@@ -1,0 +1,92 @@
+/* CONTENIDO RESPONSIVO */
+.imagen-responsiva {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    /* Estilos para pantallas más pequeñas, como dispositivos móviles */
+  }
+  
+  @media screen and (min-width: 769px) {
+    /* Estilos para pantallas más grandes, como tablets y escritorio */
+  }
+  
+  .CONTAINER {
+  
+    DISPLAY: FLEX;
+  
+    FLEX-WRAP: WRAP;
+  
+    JUSTIFY-CONTENT: SPACE-BETWEEN;
+  
+  }
+  
+  .ITEM {
+  
+    FLEX-BASIS: 100%;
+  
+    MARGIN-BOTTOM: 1EM;
+  
+  }
+  
+  @MEDIA (MIN-WIDTH: 768PX) {
+  
+    .ITEM {
+  
+      FLEX-BASIS: 48%;
+  
+    }
+  
+  }
+  
+  /* CONTENIDO DE LA PAGINA WEB */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      background-color: #cf0000;
+      color: rgb(255, 242, 0);
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+  }
+  
+  main {
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 800px;
+  }
+  
+  .album {
+      margin-bottom: 20px;
+  }
+  
+  footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('Imagenes\cyberpunk-2077.gif'); /* Ruta a tu archivo .gif */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
