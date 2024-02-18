@@ -167,6 +167,6 @@ a:hover {
 
 /* MAPA de google */
 #map {
-  height: 400px;
-  width: 100%;
+	height: 500px;
+	width: 100%;
 }
