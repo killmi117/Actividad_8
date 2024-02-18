@@ -31,14 +31,27 @@ function cerrarModal() {
 
 // Maps
 
-function iniciarMap(){
-  var coord = {lat: 31.5889594 ,lng: -106.3760624};
-  var map = new google.maps.Map(document.getElementById('map'),{
-    zoom: 10,
+function iniciarMap() {
+  var coord = { lat: 31.5889594, lng: -106.3760624 };
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15, // Nivel de zoom inicial
     center: coord
   });
   var marker = new google.maps.Marker({
     position: coord,
     map: map
+  });
+}
+
+// servwork.js
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/servwork.js')
+      .then(function (registration) {
+        console.log('Service Worker registrado con éxito:', registration);
+      }, function (err) {
+        console.log('Error al registrar el Service Worker:', err);
+      });
   });
 }
